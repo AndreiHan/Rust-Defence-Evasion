@@ -1,0 +1,15 @@
+[package]
+name = "enable_agc"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+windows = { workspace = true, features = [
+  "Win32_System_Threading",
+  "Win32_System_SystemServices",
+] }
+
+[lints]
+workspace = true
